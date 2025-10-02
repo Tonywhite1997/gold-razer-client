@@ -42,7 +42,7 @@ export default function Hero() {
   };
 
   return (
-    <main className="flex flex-col md:flex-row items-center md:justify-center bg-gradient-to-r from-black to-gray-900 gap-10 py-16 px-6 bg-black min-h-[calc(100vh-80px)] text-white">
+    <main className="flex flex-col md:flex-row items-center md:justify-center bg-gradient-to-r from-black to-gray-900 gap-10 py-20 px-6 bg-black min-h-[calc(100vh-80px)] text-white">
       {/* Left - Steam Card Image */}
       <div className="flex justify-center md:justify-end max-w-md">
         <img
