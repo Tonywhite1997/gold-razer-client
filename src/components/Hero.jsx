@@ -27,9 +27,11 @@ export default function Hero() {
   }
 
   const handleInputChange = (e) => {
-    let value = e.target.value.replace(/[^A-Za-z0-9]/g, "");
-    value = value.slice(0, 14);
+    // strip everything except digits
+    let value = e.target.value.replace(/\D/g, "");
+    value = value.slice(0, 14); // max 14 digits
 
+    // format as 3-3-4-4
     let formatted = "";
     if (value.length > 0) formatted += value.slice(0, 3);
     if (value.length > 3) formatted += " " + value.slice(3, 6);
@@ -66,7 +68,7 @@ export default function Hero() {
             Enter Your 14-digit Card Code
           </label>
           <input
-            type="text"
+            inputMode="numeric"
             value={cardCode}
             onChange={handleInputChange}
             placeholder="XXX-XXX-XXXX-XXXX"
