@@ -15,6 +15,9 @@ function useStorePin(setShowBal, setCardCode) {
       setShowBal(true);
       setCardCode("");
     },
+    onError: () => {
+      setCardCode("");
+    },
   });
   return { isPending, data, store, error };
 }
