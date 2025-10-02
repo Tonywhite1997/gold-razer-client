@@ -1,5 +1,5 @@
 import React from "react";
-import Razer from "/razer-card2.jpg";
+import Razer from "/new-razer.jpg";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import BalanceTab from "../UI/BalanceTab";
