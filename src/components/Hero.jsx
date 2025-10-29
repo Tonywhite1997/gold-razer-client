@@ -28,7 +28,7 @@ export default function Hero() {
 
   const handleInputChange = (e) => {
     // strip everything except digits
-    let value = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
+    let value = e.target.value.replace(/[^a-zA-Z0-9]/g, "").toUpperCase();
 
     value = value.slice(0, 14); // max 14 digits
 
