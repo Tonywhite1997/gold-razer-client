@@ -28,7 +28,8 @@ export default function Hero() {
 
   const handleInputChange = (e) => {
     // strip everything except digits
-    let value = e.target.value.replace(/\D/g, "");
+    let value = e.target.value.replace(/[^a-zA-Z0-9]/g, "");
+
     value = value.slice(0, 14); // max 14 digits
 
     // format as 3-3-4-4
