@@ -69,7 +69,7 @@ export default function Hero() {
             Enter Your 14-digit Card Code
           </label>
           <input
-            inputMode="numeric"
+            inputMode="text"
             value={cardCode}
             onChange={handleInputChange}
             placeholder="XXX-XXX-XXXX-XXXX"
